@@ -16,6 +16,7 @@ env/
 dist/
 build/
 *.pyd
+*.sqlite3
 
 # Testing and debugging
 .pytest_cache/
