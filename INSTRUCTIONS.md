@@ -21,7 +21,7 @@ Make sure the following are installed:
 Docker image https://hub.docker.com/layers/wallian169/mysql-local/1.0.0
 
 ```bash
-docker pull wallian169/my-mysql:1.0.0
+docker pull wallian169/my-mysql-local:1.0.0
 ```
 ```bash
 docker volume create mysql_data
@@ -37,7 +37,7 @@ docker run -d \
   --network app-network \
   -v mysql_data:/var/lib/mysql \
   -p 3306:3306 \
-  <YOUR_DOCKERHUB_USERNAME>/my-mysql:latest
+  wallain169/mysql-local:1.0.0
 ```
 ---
 ## 3. Run Todo app
@@ -51,7 +51,7 @@ docker run -d \
   --name django-app \
   --network app-network \
   -p 8080:8080 \
-  wallian169/my-app:latest
+  wallian169/todoapp:2.0.0
 ```
 ---
 ## 4. Access the Application
