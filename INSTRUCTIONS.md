@@ -21,7 +21,7 @@ Make sure the following are installed:
 Docker image https://hub.docker.com/layers/wallian169/mysql-local/1.0.0
 
 ```bash
-docker pull wallian169/my-mysql-local:1.0.0
+docker pull wallian169/mysql-local:1.0.0
 ```
 ```bash
 docker volume create mysql_data
@@ -37,7 +37,7 @@ docker run -d \
   --network app-network \
   -v mysql_data:/var/lib/mysql \
   -p 3306:3306 \
-  wallain169/mysql-local:1.0.0
+  wallian169/mysql-local:1.0.0
 ```
 ---
 ## 3. Run Todo app
