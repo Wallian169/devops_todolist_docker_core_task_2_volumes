@@ -44,7 +44,7 @@ docker run -d \
 
 Docker image https://hub.docker.com/layers/wallian169/todoapp/2.0.0
 ```bash
-docker pull wallian169/my-app:2.0.0
+docker pull wallian169/todoapp:2.0.0
 ```
 ```bash
 docker run -d \
